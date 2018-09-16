@@ -43,7 +43,7 @@
 			$message .='</html>';
 
 			if(mail($email,$email_subject,$message,$headers)){
-				echo "berhasil";
+				echo "berhasil kirim email ";
 				return true; 
 			}else{
 				echo "gagal";

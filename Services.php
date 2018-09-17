@@ -16,7 +16,7 @@
     <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="Home.php" class="w3-bar-item w3-button">HOME</a>
+      <a href="index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <a href="Booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -33,7 +33,7 @@
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="Home.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="Services.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
   <a href="Booking.php" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>

@@ -50,5 +50,25 @@ function cekform(){
         return true;
 }
 
+function cekform2(){
+    var sMsg="";
+    var re = new RegExp("^[a-z0-9][a-z0-9_\.-]{0,}[a-z0-9]@[a-z0-9][a-z0-9_\.-]{0,}[a-z0-9][\.][a-z0-9]{2,4}$");
+
+    if(document.forms["sigin"]["email"].value==""){
+        sMsg +=("\n* Anda belum mengisikan Email");
+    }
+   
+    if(document.forms["signin"]["password"].value==""){
+        sMsg +=("\n* Anda belum mengisikan Password");
+    }
+   
+    if(sMsg!=""){
+        alert("Peringatan: \n" +sMsg);
+        return false;
+    }
+    else    
+        return true;
+}
+
 
 

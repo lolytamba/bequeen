@@ -24,7 +24,7 @@
       <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="Home.php" class="w3-bar-item w3-button">HOME</a>
+        <a href="index.php" class="w3-bar-item w3-button">HOME</a>
         <a href="Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
         <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
         <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -41,27 +41,30 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="Services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+    <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="Services.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
     <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="Login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+    <a href="Login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
   </nav>
   
-  <div class="cont" style="margin-top: 100px; z-index: 0;">
+  
+<div class="cont" style="margin-top: 100px; z-index: 0;">
+<form action="login-proses.php" method="post" id="signin" name ="signin" onsubmit="return cekform2()">
     <div class="form sign-in" style="padding-top: 100px">
       <h2>Welcome back,</h2>
       <label>
         <span>Email</span>
-        <input type="email" />
+        <input type="email" name="email" id="email" value="" />
       </label>
       <label>
         <span>Password</span>
-        <input type="password" />
+        <input type="password" name="password" id="password" value=""/>
       </label>
       <p class="forgot-pass">Forgot password?</p>
-        <button type="button" class="submit">Sign In</button>
+      <button type="submit" class="submit" name="signin" id="btnSubmit">Sign In</button>
   </div>
+  </form>
 
     <div class="sub-cont">
         <div class="img">

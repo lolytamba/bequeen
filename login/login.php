@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/BeQueen.css">
+  <link rel="stylesheet" type="text/css" href="../css/BeQueen.css">
   
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="vendor/boostrap/dist/css/bootstrap.min.css" /> -->
 
   
@@ -24,11 +24,11 @@
       <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="index.php" class="w3-bar-item w3-button">HOME</a>
-        <a href="Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
-        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-        <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+        <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
+        <a href="../Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+        <a href="../index.php#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+        <a href="../index.php#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
   
@@ -41,11 +41,13 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="Services.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="login/login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+
+    <a href="../index.phpindex.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="../index.phpServices.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+    <a href="../index.php#pricing" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
+    <a href="../index.php#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+
   </nav>
   
   
@@ -84,7 +86,7 @@
             </div>
         </div>
 
-        <form action="register-proses.php" method="post" id="signup" name ="signup" onsubmit="return cekform()">
+        <form action="register-proses.php" method="post" id="signup" name="signup" onsubmit="return cekform()">
         <div class="form sign-up" style="padding-top: 110px">
             <h2 style="margin-top:-30px">Time to feel like home,</h2>
             <label>
@@ -107,7 +109,7 @@
                 <input type="password" name="confirm" id="confirm" value="" onchange="cekPassword()" placeholder="Confirm Password" />
             </label>
 
-            <button type="submit" class="submit" id="btnSubmit"name="register">Sign Up</button>
+            <button type="submit" class="submit" id="btnSubmit" name="register">Sign Up</button>
             <span id="errorMsg" style="display: none"></span>
         </div>
       </form>
@@ -144,15 +146,15 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="Login.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="login.php" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <p>Powered by <a title="BeQueen" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
 </footer>
 
-<script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/boostrap/dist/js/bootstrap.min.js"></script>
+<script src="../jquery/dist/jquery.min.js"></script>
+<script src="../boostrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script  src="js/index.js"></script>
-<script  src="js/style.js"></script>
+<script  src="../js/index.js"></script>
+<script  src="../js/style.js"></script>
 
 </body>
 </html>

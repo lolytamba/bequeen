@@ -1,7 +1,5 @@
 <?php
     include("koneksi.php");
-    session_start();
-    if($_SESSION['id']){
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +24,7 @@
       <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="Login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+      <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -43,7 +41,7 @@
   <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
   <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  <a href="Login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="./login/login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -289,9 +287,3 @@
  
 </body>
 </html>
-
-<?php
-    }else{
-        header("location: index.php");
-    }
-?>

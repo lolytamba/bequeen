@@ -58,10 +58,12 @@ require '../vendor/autoload.php';
 	
 				'; 
 
-                $mail->send();
+				$mail->send();
+				echo "Berhasil dikirim ke ".$email;
                 return true;
             } catch (Exception $e) {
-                return false;
+				return false;
+				echo "gagal";
 			}
 			
 		}

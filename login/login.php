@@ -90,7 +90,7 @@
         <div class="form sign-up" style="padding-top: 110px">
             <h2 style="margin-top:-30px">Time to feel like home,</h2>
             <label>
-              <input type="text" name="name" id="name" value="" placeholder="Full Name"/>
+              <input type="text" name="name" id="name" value="" placeholder="Username"/>
             </label>
 
             <label>

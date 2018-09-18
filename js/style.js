@@ -1,7 +1,5 @@
 function cekPassword(){ 
-    var name                = $("#name").val();
-    var no_hp               = $("#no_hp").val();
-    var email               = $("#email").val();
+    
     var password            = $("#password").val();
     var confirm_password    = $("#confirm").val();
 

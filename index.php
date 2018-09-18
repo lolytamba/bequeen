@@ -41,7 +41,7 @@
   <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
   <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  <a href="Login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="./login/login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
 </nav>
 
 <!-- Header with full-height image -->

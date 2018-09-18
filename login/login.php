@@ -84,7 +84,7 @@
             </div>
         </div>
 
-        <form action="register-proses.php" method="post" id="signup" name ="signup" onsubmit="return cekform()">
+        <form action="register-proses.php" method="post" id="signup" name="signup" onsubmit="return cekform()">
         <div class="form sign-up" style="padding-top: 110px">
             <h2 style="margin-top:-30px">Time to feel like home,</h2>
             <label>
@@ -107,7 +107,7 @@
                 <input type="password" name="confirm" id="confirm" value="" onchange="cekPassword()" placeholder="Confirm Password" />
             </label>
 
-            <button type="submit" class="submit" id="btnSubmit"name="register">Sign Up</button>
+            <button type="submit" class="submit" id="btnSubmit" name="register">Sign Up</button>
             <span id="errorMsg" style="display: none"></span>
         </div>
       </form>

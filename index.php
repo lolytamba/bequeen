@@ -1,7 +1,5 @@
 <?php
     include("koneksi.php");
-    session_start();
-    if($_SESSION['id']){
 ?>
 
 <!DOCTYPE html>
@@ -289,9 +287,3 @@
  
 </body>
 </html>
-
-<?php
-    }else{
-        header("location: index.php");
-    }
-?>

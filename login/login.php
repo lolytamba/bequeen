@@ -41,11 +41,11 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="Services.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="Login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+    <a href="../index.phpindex.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="../index.phpServices.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+    <a href="../index.php#pricing" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
+    <a href="../index.php#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
   </nav>
   
   
@@ -148,11 +148,11 @@
   <p>Powered by <a title="BeQueen" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
 </footer>
 
-<script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/boostrap/dist/js/bootstrap.min.js"></script>
+<script src="../jquery/dist/jquery.min.js"></script>
+<script src="../boostrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script  src="js/index.js"></script>
-<script  src="js/style.js"></script>
+<script  src="../js/index.js"></script>
+<script  src="../js/style.js"></script>
 
 </body>
 </html>

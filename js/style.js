@@ -4,7 +4,7 @@ function cekPassword(){
     var confirm_password    = $("#confirm").val();
 
     if(password != "" && confirm_password !=""){
-        if (password != confirm_password) {
+        if (password == confirm_password) {
             $("#password").css({"border-color": "red"});
             $("#confirm").css({'border-color': "#c33"});
             $("#btnSubmit").attr("disabled", "disabled");

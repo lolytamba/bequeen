@@ -55,12 +55,15 @@ if(isset($_POST['register']))
 			Please click this link to activate your account:
 			https://bequuen.thekingcorp.org/verify.php?active='.$active.'
 
-			'; 
+			
+				'; 
 
-			$mail->send();
-			echo "Berhasil dikirim ke ".$email;
+				$mail->send();
+				echo "Berhasil dikirim ke ".$email;
+			return true;
 		} catch (Exception $e) {
-			echo "gagal";
+				return false;
+				echo "gagal";
 		}
 		
 	}

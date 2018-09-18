@@ -50,7 +50,7 @@
   
   
 <div class="cont" style="margin-top: 100px; z-index: 0;">
-<form action="login-proses.php" method="post" id="signin" name ="signin" onsubmit="return cekform2()">
+<form action="login/login-proses.php" method="post" id="signin" name ="signin" onsubmit="return cekform2()">
     <div class="form sign-in" style="padding-top: 100px">
       <h2>Welcome back,</h2>
       <label>

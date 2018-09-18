@@ -1,4 +1,12 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
+require 'vendor/autoload.php';
 
 	if(isset($_POST['register']))
 	{
@@ -14,34 +22,48 @@
 		
 		if($input)
 		{
-			$to      = $email; // Send email to our user
-			$subject = 'Signup | Verification'; // Give the email a subject 
-			$message = '
+			$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+            try {
+                $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+                $mail->isSMTP();                                      // Set mailer to use SMTP
+                $mail->Host = 'kakuna.rapidplex.com;www.thekingcorp.org';  // Specify main and backup SMTP servers
+                $mail->SMTPAuth = true;                               // Enable SMTP authentication
+                $mail->Username = 'bequeen@thekingcorp.org';                 // SMTP username
+                $mail->Password = 'bequeen@TheKing~18';                           // SMTP password
+                $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+                $mail->Port = 465 ;                                    // TCP port to connect to
 
-			Thanks for signing up!
-			Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
+                //Recipients
+                $mail->setFrom('bequeen@thekingcorp.org', 'Bequeen');
+                $mail->addAddress($email);               // Name is optional
+                $mail->addReplyTo('noreply@thekingcorp.org', 'noreply');
+                $mail->addCC('bequeen@thekingcorp.org');
+                $mail->addBCC('bequeen@thekingcorp.org');
 
-			------------------------
-			Username: '.$nama.'
-			Password: '.$active.'
-			------------------------
 
-			Please click this link to activate your account:
-			http://thekingcorp.org/verify.php?active='.$active.'
+                //Content
+                $mail->isHTML(true);                                  // Set email format to HTML
+                $mail->Subject = 'Website Contact From:  Bequeen';
+                $mail->Body = '
 
-			'; // Our message above including the link
-							
-			$headers = 'From:noreply@yourwebsite.com' . "\r\n"; // Set from headers
-			 // Send our emailv
+				Thanks for signing up!
+				Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
+	
+				------------------------
+				Username: '.$nama.'
+				------------------------
+	
+				Please click this link to activate your account:
+				https://bequuen.thekingcorp.org/verify.php?active='.$active.'
+	
+				'; 
 
-			if(mail($to, $subject, $message, $headers)){
-				echo "berhasil kirim email ";
-				return true; 
-			}else{
-				echo "gagal";
+                $mail->send();
+                return true;
+            } catch (Exception $e) {
+                return false;
 			}
-			//echo 'Anda berhasil terdaftar!';
-			//echo '<a href="Login.php">Kembali</a>'
+			
 		}
 		else
 		{

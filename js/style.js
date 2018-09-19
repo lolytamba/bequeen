@@ -1,19 +1,25 @@
 function cekPassword(){ 
     
-    var password            = $("#password").val();
+    var password            = $("#pass").val();
     var confirm_password    = $("#confirm").val();
 
     if(password != "" && confirm_password !=""){
-        if (password != confirm_password) {
-            $("#password").css({"border-color": "red"});
+        $("#errorMsg").css("display", "block");
+        if(password != confirm_password){
+            $("#pass").css({"border-color": "red"});
             $("#confirm").css({'border-color': "#c33"});
+
             $("#btnSubmit").attr("disabled", "disabled");
-            $("#errorMsg").html("Password do not match.");
-            $("#errorMsg").css("display", "block");
-        }     
-        else{
             $('.submit').prop("disabled", true);
+
+           if($("#btnSubmit").attr("disabled")){
+            $("#errorMsg").html("Password do not match!");
+            } 
+        }else{
+            $("#pass").css({"border-color": "green"});
+            $("#confirm").css({'border-color': "green"});
             $('.submit').removeAttr("disabled");
+            $("#errorMsg").html("Password match!");
         }
     }
 }

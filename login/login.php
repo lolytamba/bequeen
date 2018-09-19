@@ -64,7 +64,7 @@
         <input type="password" name="password" id="password" value=""/>
       </label>
       <p class="forgot-pass">Forgot password?</p>
-      <button type="submit" class="submit" name="signin" id="btnSubmit">Sign In</button>
+      <button type="submit" class="submit" name="signin" id="btnSubmit1">Sign In</button>
   </div>
   </form>
 
@@ -90,7 +90,7 @@
         <div class="form sign-up" style="padding-top: 110px">
             <h2 style="margin-top:-30px">Time to feel like home,</h2>
             <label>
-              <input type="text" name="name" id="name" value="" placeholder="Username"/>
+              <input type="text" name="name" id="name" value="" placeholder="Full Name"/>
             </label>
 
             <label>
@@ -102,7 +102,7 @@
             </label>
 
             <label>   
-                <input type="password" name="password" id="password" value="" placeholder="Password" />
+                <input type="password" name="password" id="pass" onchange="cekPassword()" value="" placeholder="Password" />
             </label>
 
             <label>

@@ -1,20 +1,20 @@
 <?php
 
-    include("koneksi.php");
+    include("../koneksi.php");
     $email = $_GET['email'];
     $active = $_GET['active'];
 
-    if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['active']) &&!empty($_GET['active'])){
-        $email = mysqli_escape_string($_GET['email']);
-        $active = mysqli_escape_string($_GET['active']);    
+    if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['active']) && !empty($_GET['active'])){
+        $email = mysqli_escape_string($con, $_POST['email']);
+       // $active = mysqli_escape_string($con, $_POST['active']);    
 
-        $search = mysqli_query($con, "SELECT email, active, status FROM register WHERE email='".$email."' AND active='".$active."' AND status='0'") or die(mysqli_error());
-        $match = mysqli_num_roms($search);
+        $search = mysqli_query($con, "SELECT email, active, status FROM register WHERE email='".$email."' AND active='".$active."' AND status='0'") or die(mysqli_sconnect_error());
+        $match = mysqli_num_rows($search);
 
         echo $match;
 
         if($match > 0){
-            mysqli_query("UPDATE register SET status='1' WHERE email='".$email."' AND active='".$active."' AND status='0'") or die(mysqli_error());
+            mysqli_query($con, "UPDATE register SET status='1' WHERE email='".$email."' AND active='".$active."' AND status='0'") or die(mysqli_connect_error());
             echo '<div class="statusMsg">Your account has be actived, you can now login</div>';
         }else{
             echo '<div class="statusmsg">The url is either invalid or you already have activated your account.</div>';

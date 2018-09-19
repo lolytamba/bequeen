@@ -7,7 +7,7 @@
     $password     = mysqli_escape_string($con, $_POST['password1']);
     $active       = $_GET['active'];
 
-    $search = mysqli_query($con, "SELECT email, active, status FROM register WHERE email='".$email."' AND active='".$active."' AND status='0'") or die(mysqli_connect_error());
+    $search = mysqli_query($con, "SELECT email, active, status FROM register WHERE email='".$email."' AND active='".$active."' AND status='1'") or die(mysqli_connect_error());
 
     $match = mysqli_num_rows($search);
     
@@ -15,6 +15,7 @@
         $sMsg = 'Login Complete! Thanks';
        session_start();
        $_SESSION["id"] = $id;
+      // header('location: Booking.php');
     }else{
         $sMsg = 'Login Failed! Please make sure that you enter the correct details and that you have activated your account.';
     }

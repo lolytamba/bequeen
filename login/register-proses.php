@@ -49,11 +49,11 @@ if(isset($_POST['register']))
 			Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
 
 			------------------------
-			Username: '.$nama.'
+			Full name: '.$nama.'
 			------------------------
 
 			Please click this link to activate your account:
-			https://bequuen.thekingcorp.org/verify.php?active='.$active.'
+			https://bequuen.thekingcorp.org/verify.php?email='.$email.'&active='.$active.'
 
 			
 				'; 

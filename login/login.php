@@ -49,8 +49,7 @@
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
 
   </nav>
-  
-  
+
 <div class="cont" style="margin-top: 100px; z-index: 0;">
 <form action="login/login-proses.php" method="post" id="signin" name ="signin" onsubmit="return cekform2()">
     <div class="form sign-in" style="padding-top: 100px">
@@ -85,7 +84,7 @@
               <span class="m--in">Sign In</span>
             </div>
         </div>
-
+    
         <form action="register-proses.php" method="post" id="signup" name="signup" onsubmit="return cekform()">
         <div class="form sign-up" style="padding-top: 110px">
             <h2 style="margin-top:-30px">Time to feel like home,</h2>

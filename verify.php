@@ -5,8 +5,9 @@
     $email = $_GET['email'];
     $active = $_GET['active'];
 
-    if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['active']) && !empty($_GET['active'])){
-        $email = mysqli_escape_string($con, $email);
+    //if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['active']) && !empty($_GET['active'])){
+        if(isset($_GET['active']) && !empty($_GET['active'])){
+       // $email = mysqli_escape_string($con, $email);
        // $active = mysqli_escape_string($con, $_POST['active']);    
 
         $search = mysqli_query($con, "SELECT email, active, status FROM register WHERE email='".$email."' AND active='".$active."' AND status='0'") or die(mysqli_sconnect_error());

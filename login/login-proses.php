@@ -1,23 +1,38 @@
 <?php
     if(isset($_POST['signin'])){
-        
-    include('../koneksi.php');
-    $sMsg         ="";
-    $email        = mysqli_escape_string($con, $_POST['email']);
-    $password     = mysqli_escape_string($con, $_POST['password1']);
-    $active       = $_GET['active'];
+       
+        include('../koneksi.php');
+        $email    = $_POST['email'];
+        $password = $_POST['password'];
 
-    $search = mysqli_query($con, "SELECT email, active, status FROM register WHERE email='".$email."' AND active='".$active."' AND status='1'") or die(mysqli_connect_error());
+        $sql2="SELECT status FROM register WHERE email='".$email."'";
+        $result2=mysqli_query($con,$sql2);
+        $row2=mysqli_fetch_assoc($result2);
 
-    $match = mysqli_num_rows($search);
-    
-    if($match > 0){
-        $sMsg = 'Login Complete! Thanks';
-       session_start();
-       $_SESSION["id"] = $id;
-      // header('location: Booking.php');
-    }else{
-        $sMsg = 'Login Failed! Please make sure that you enter the correct details and that you have activated your account.';
+        if($row2['status']=='1'){
+            $sql="SELECT password FROM register WHERE email='".$email."'";
+            $result=mysqli_query($con,$sql);
+            $row=mysqli_fetch_assoc($result); //data diambil trus jadi bentuk array
+
+
+            if(password_verify($password,$row['password'])){
+                $sql="SELECT * FROM register WHERE email='".$email."'";
+                $result=mysqli_query($con,$sql); //jalanin sql
+                $row=mysqli_fetch_assoc($result);
+
+                session_start();
+                $_SESSION["id"] = $row['id_user'];
+                $_SESSION["email"] = $row['email'];
+
+                header("Location: ../Booking/booking.php");
+            }else{
+                echo "<script>alert('password atau email salah ')
+                            window.history.back()</script>";
+            }
+
+        }
+        else{
+            echo 'Anda belum verify email!';
+        }        
     }
-}
 ?>

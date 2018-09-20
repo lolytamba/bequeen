@@ -18,9 +18,9 @@
     <div class="w3-right w3-hide-small">
       <a href="index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-      <a href="Booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+      <a href="Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="Login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+      <a href="Login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -35,7 +35,7 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="Services.php" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-  <a href="Booking.php" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
+  <a href="Booking/booking.php" onclick="w3_close()" class="w3-bar-item w3-button">BOOK</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   <a href="Login.php" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
 </nav>

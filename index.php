@@ -1,7 +1,3 @@
-<?php
-    include("koneksi.php");
-?>
-
 <!DOCTYPE html>
 <html>
 <title>BeQueen</title>
@@ -209,7 +205,7 @@
           <span class="w3-opacity">per packet</span>
         </li>
         <li class="w3-lighligt-grey w3-padding-24">
-          <a href="Booking.html" class="w3-button w3-blue w3-padding-large"><i class="th"></i> Book</a>
+          <a href="Booking/booking.php" class="w3-button w3-blue w3-padding-large"><i class="th"></i> Book</a>
         </li>
       </ul>
     </div>
@@ -225,7 +221,7 @@
           <span class="w3-opacity">per packet</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <a href="Booking.html" class="w3-button w3-blue w3-padding-large"><i class="th"></i> Book</a>
+          <a href="Booking/booking.php" class="w3-button w3-blue w3-padding-large"><i class="th"></i> Book</a>
         </li>
       </ul>
     </div>
@@ -241,7 +237,7 @@
           <span class="w3-opacity">per packet</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <a href="Booking.html" class="w3-button w3-blue w3-padding-large"><i class="th"></i> Book</a>
+          <a href="Booking/booking.php" class="w3-button w3-blue w3-padding-large"><i class="th"></i> Book</a>
         </li>
       </ul>
     </div>

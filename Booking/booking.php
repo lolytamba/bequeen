@@ -115,10 +115,10 @@
 <script src="vendor/boostrap/dist/js/bootstrap.min.js"></script>
 <script  src="../js/booking.js"></script>
 
-</body>
-</html>
 
-<script>
+</body>
+
+    <script>
   $(document).ready(function(){
     function fetch_data(){
       $.ajax({
@@ -131,22 +131,6 @@
     }
     fetch_data();
     $(document).on('click','#btn_add',function(){
-      /*var SerPac=$('#SerPac').text();
-      var arrival=$('#arrival').date();
-      var bookDate=$('#bookDate').date();
-
-      if (SerPac=='') {
-        alert("Enter Services/Paket");
-        return false;
-      }
-      if (arrival=='') {
-        alert("Enter Arrival Date");
-        return false;
-      }
-      if (bookDate=='') {
-        alert("Enter Booking Date");
-        return false;
-      }*/
       $.ajax({
         url:"insert.php",
         method:"POST",
@@ -214,6 +198,7 @@
     });
   });
 </script>
+</html>
 
 <?php
     }else{

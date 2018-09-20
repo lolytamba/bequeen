@@ -59,7 +59,7 @@ if(isset($_POST['register']))
 				------------------------
 
 				Please click this link to activate your account:
-				https://bequuen.thekingcorp.org/verify.php?active='.$active.'&email='.$email.'
+				https://bequuen.thekingcorp.org/verify.php?active='.$active.'
 
 			
 					'; 

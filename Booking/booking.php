@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="../css/booking.css">
+
 <body>
 
  <!-- Navbar (sit on top) -->
@@ -111,14 +112,13 @@
   <p>Powered by <a title="BeQueen" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
 </footer>
 
-<script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/boostrap/dist/js/bootstrap.min.js"></script>
-<script  src="../js/booking.js"></script>
-
+<script src="../vendor/jquery/dist/jquery.min.js"></script>
+<script src="../vendor/boostrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/booking.js"></script>
 
 </body>
 
-    <script>
+<script>
   $(document).ready(function(){
     function fetch_data(){
       $.ajax({

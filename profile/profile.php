@@ -5,7 +5,7 @@
     $id = $_SESSION['id'];
     $nama = $_SESSION['nama'];
     $email = $_SESSION['email'];
-    $phone = $_SESSION['no_hp'];
+    $phone =$_SESSION['phone'];
     $status = $_SESSION['status'];
   }
 ?>
@@ -82,26 +82,26 @@
                       <tbody>
 
                         <tr>
-                          <td>Full Name:</td>
-                          <td><?php echo $nama;?></td>
+                          <td>Full Name:</td> 
+                          <td><input id="name" type="hidden" name="nama" value="<?php echo $nama ?>" required></td>
                         </tr>
 
                         <tr>
                           <td>Email</td>
-                          <td><?php echo $email;?></td>
+                          <td><input id="email" type="hidden" name="nama" value="<?php echo $email ?>" required></td>
                         </tr>
 
                         <tr>
                           <td>Phone Number</td>
-                          <td><?php echo $phone;?></td>
+                          <td><input id="no_hp" type="hidden" name="no_hp" value="<?php echo $phone ?>" required></td>
                         </tr>
 
                         <tr>
                           <td>Status</td>
-                          <td><?php if($status =='1'){
+                          <td><input id="status" type="hidden" name="status" value="<?php if($status =='1'){
                                   echo 'Active';
                                 }
-                                ?>
+                                ?>" required>
                           </td>
                         </tr>
                         

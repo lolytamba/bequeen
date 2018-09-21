@@ -5,7 +5,8 @@
     $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
     $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya
     $nama = $_SESSION["nama"];
-    $phone =$_SESSION['no_hp'];
+    $phone =$_SESSION['phone'];
+    
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +26,7 @@
  <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="../profile/profile.php" class="w3-bar-item w3-button w3-wide">HI <?php echo $nama;?> </a> 
+    <a href="../profile/profile.php" class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?> </a> 
   
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">

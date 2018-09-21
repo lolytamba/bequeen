@@ -5,6 +5,7 @@
     $id = $_SESSION['id'];
     $nama = $_SESSION['nama'];
     $email = $_SESSION['email'];
+    $phone = $_SESSION['phone'];
   }
 ?>
 <!DOCTYPE html>
@@ -60,8 +61,6 @@
   <div class="container">
       <div class="row">
       <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-            <a href="edit.html" ></a>
-            <a href="edit.html" ></a>
         <br>
       </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
@@ -74,7 +73,7 @@
               <div class="row">
                 <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
                 
-                <form action = "" method="post">
+                <form action = "update.php" method="post">
                   <td><input id="id" type="hidden" name="id" value="<?php echo $id;?>" required></td>
                   <div class=" col-md-9 col-lg-9 "> 
                     <table class="table table-user-information">
@@ -87,12 +86,12 @@
 
                         <tr>
                           <td>Phone Number</td>
-                          <td><input id="no_hp" type="text" name="no_hp"></td>
+                          <td><input id="no_hp" type="no_hp" name="no_hp"></td>
                         </tr>
 
                         <tr>
                           <td>Email</td>
-                          <td><input type="hidden" name="name" id="name" value="<?php echo $email;?>" required></td>
+                          <td><input type="hidden" name="email" id="email" value="<?php echo $email;?>" required></td>
                         </tr>
 
                         <tr>

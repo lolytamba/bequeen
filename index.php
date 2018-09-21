@@ -157,16 +157,16 @@ if($_SESSION['id']){
       <h5>Straight Hair is very hard to damage, and also difficult to curl <b> $20</b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Wavy Hair</h1>
+      <h1 style="font-size: 25px">Wavy Hair $30<h1>
     </div>
     <div class="w3-container">
-      <h5>Wavy Hair has a texture and sheen between straight and curly hair and is likely to become fizzy<b> $30</b></h5>
+      <h5>Wavy Hair has a texture and sheen between straight and curly hair and is likely to become fizzy<b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Curly Hair</h1>
+      <h1 style="font-size: 25px">Curly Hair $40</h1>
     </div>
     <div class="w3-container">
-      <h5>The pattern of the hair resembles an 'S' shape and sometimes a 'Z' shape<b> $40</b></h5>
+      <h5>The pattern of the hair resembles an 'S' shape and sometimes a 'Z' shape<b> </b></h5>
     </div>
   </div>
 </div>

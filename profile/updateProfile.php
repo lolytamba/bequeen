@@ -2,10 +2,10 @@
   include('../koneksi.php');
   session_start();
   if($_SESSION["email"]){  
-    $id = $_SESSION['id'];
-    $nama = $_SESSION['nama'];
-    $email = $_SESSION['email'];
-    $phone = $_SESSION['phone'];
+    $id     = $_SESSION['id'];
+    $nama   = $_SESSION['nama'];
+    $email  = $_SESSION['email'];
+    $phone  = $_SESSION['phone'];
   }
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-  <a href="profile.php"class="w3-bar-item w3-button w3-wide">"Hi, <?php echo $nama;?></a>
+  <a href="profile.php"class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?>!</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.php" class="w3-bar-item w3-button">HOME</a>
@@ -73,35 +73,35 @@
               <div class="row">
                 <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
                 
-                <form action = "update.php" method="post">
+                <form action = "update.php" method="post" id="update" name="update" onsubmit="return cekform()">
                   <td><input id="id" type="hidden" name="id" value="<?php echo $id;?>" required></td>
                   <div class=" col-md-9 col-lg-9 "> 
                     <table class="table table-user-information">
                       <tbody>
 
-                        <tr>
-                          <td>Full Name</td>
-                          <td><input type="text" name="name" id="name"></td>
-                        </tr>
+                          <tr>
+                            <td>Full Name:</td> 
+                            <td><input id="name" name="nama" value="<?php echo $nama ?>" size ="40" required></td>
+                          </tr>
 
-                        <tr>
-                          <td>Phone Number</td>
-                          <td><input id="no_hp" type="no_hp" name="no_hp"></td>
-                        </tr>
+                          <tr>
+                            <td>Phone Number</td>
+                            <td><input id="no_hp" name="no_hp" value="<?php echo $phone ?>" size ="40" required></td>
+                          </tr>
 
-                        <tr>
-                          <td>Email</td>
-                          <td><input type="hidden" name="email" id="email" value="<?php echo $email;?>" required></td>
-                        </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td><input id="email" name="email" value="<?php echo $email ?>" size ="40" disabled></td>
+                          </tr>
 
                         <tr>
                           <td>Password</td>
-                          <td><input type="password" name="password" id="pass" onchange="cekPassword()" required></td>
+                          <td><input type="password" name="password" id="pass" onchange="cekPassword()" size ="40" required></td>
                         </tr>
 
                         <tr>
                           <td>Confirm Password</td>
-                          <td><input type="password" name="confirm" id="confirm" onchange="cekPassword()" required></td>
+                          <td><input type="password" name="confirm" id="confirm" onchange="cekPassword()" size ="40" required></td>
                         </tr>
                       </tbody>
                     </table>

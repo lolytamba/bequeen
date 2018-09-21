@@ -15,10 +15,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="tampilan.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="vendor/boostrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../css/BeQueen.css">
 <link rel="stylesheet" type="text/css" href="../css/w3.css">
 
@@ -77,7 +76,7 @@
                 <div class="row">
                   <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
                   
-                  <form action="delete.php" method="post" name="delete" id="delete" onsubmit="return cekform()">
+                  <form action="delete.php" method="post" name="del" id="delete" onsubmit="return cekform()">
                   <div class=" col-md-9 col-lg-9 "> 
                     <table class="table table-user-information">
                       <tbody>
@@ -109,7 +108,7 @@
                       </tbody>
                     </table>
                     <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <button type="submit" class="submit" id="btnDelete" name="del9">Delete</button>
+                    <button type="submit" class="submit" id="btnDelete" name="del">Delete</button>
                     <!-- <a href="updateProfile.php" class="btn btn-primary">Edit</a>
                     <a href="delete.php" class="btn btn-primary">Delete</a> -->
                   </div>
@@ -134,6 +133,7 @@
  
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/boostrap/dist/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </body>
 </html>

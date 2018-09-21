@@ -3,7 +3,6 @@
 <title>BeQueen</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" type="text/css" href="css/w3.css">
 <link rel="stylesheet" type="text/css" href="css/BeQueen.css">
@@ -29,7 +28,12 @@ if($_SESSION['id']){
       <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+<<<<<<< HEAD
       <a href="../login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
+=======
+      
+      <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+>>>>>>> 806a14d1a9c952e1f1ff20fa0879b51ce29bae12
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 

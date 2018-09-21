@@ -91,7 +91,7 @@
 
                           <tr>
                             <td>Email</td>
-                            <td><input id="email" name="email" value="<?php echo $email ?>" size ="40" disabled></td>
+                            <td><input id="email" name="email" value="<?php echo $email ?>" size ="40" readonly="readonly" ></td>
                           </tr>
 
                         <tr>

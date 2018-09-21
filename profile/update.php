@@ -7,13 +7,14 @@
         $email          = $_POST['email'];
         $password       =$_POST['password'];
         $password_hash  = password_hash($password, PASSWORD_DEFAULT);
-        
-        $update = mysqli_query($con, "UPDATE register SET nama='$nama', no_hp='$phone', password='$password_hash',  WHERE email='$email'");
+
+        $update = mysqli_query($con, "UPDATE register SET nama='$nama', no_hp = '$phone', password = '$password_hash' where email = '$email' ");
         if($update){
             echo 'Profile updated';
-            header('location : profile.php');
+            $_SESSION['nama'] = $nama;
+            $_SESSION['phone'] = $phone;
+            header("Location: profile.php");
         }else{
-            echo $email;
             echo 'Failed updated profile';
         }
     }

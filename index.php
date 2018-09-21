@@ -10,6 +10,7 @@
 
 <body>
 <?php 
+session_start();
 if($_SESSION['id']){
   $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
   $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya

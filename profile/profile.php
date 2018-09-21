@@ -7,7 +7,6 @@
     $email = $_SESSION['email'];
     $phone =$_SESSION['phone'];
     $status = $_SESSION['status'];
-  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -85,17 +84,17 @@
 
                         <tr>
                           <td>Full Name:</td> 
-                          <td><input id="name"  name="nama" value="<?php echo $nama ?>" size ="40" disabled></td>
+                          <td><input id="name"  name="nama" value="<?php echo $nama ?>" size ="30" disabled></td>
                         </tr>
 
                         <tr>
                           <td>Email</td>
-                          <td><input id="email" name="email" value="<?php echo $email ?>" size ="40" disabled></td>
+                          <td><input id="email" name="email" value="<?php echo $email ?>" size ="30" disabled></td>
                         </tr>
 
                         <tr>
                           <td>Phone Number</td>
-                          <td><input id="no_hp"  name="no_hp" value="<?php echo $phone ?>" size ="40" disabled></td>
+                          <td><input id="no_hp"  name="no_hp" value="<?php echo $phone ?>" size ="30" disabled></td>
                         </tr>
 
                         <tr>
@@ -103,7 +102,7 @@
                           <td><input id="status"  name="status" value="<?php if($status =='1'){
                                   echo 'Active';
                                 }
-                                ?>" size ="40" disabled>
+                                ?>" size ="30" disabled>
                           </td>
                         </tr>
                         
@@ -138,3 +137,8 @@
 
 </body>
 </html>
+<?php
+  }else{
+    echo 'sudahi saja';
+  }
+?>

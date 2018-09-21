@@ -151,10 +151,10 @@ if($_SESSION['id']){
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-light-blue w3-display-container">
       <span onclick="document.getElementById('hair').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1 style="font-size: 25px">Straight Hair</h1>
+      <h1 style="font-size: 25px">Straight Hair $20</h1>
     </div>
     <div class="w3-container">
-      <h5>Straight Hair is very hard to damage, and also difficult to curl <b> $20</b></h5>
+      <h5>Straight Hair is very hard to damage, and also difficult to curl <b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
       <h1 style="font-size: 25px">Wavy Hair $30<h1>
@@ -176,22 +176,22 @@ if($_SESSION['id']){
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-light-blue w3-display-container">
       <span onclick="document.getElementById('nail').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1 style="font-size: 25px">Digi World Nail Art</h1>
+      <h1 style="font-size: 25px">Digi World Nail Art $50</h1>
     </div>
     <div class="w3-container">
-      <h5>The producedure is automated, and therefore it takes very less time to get the desired nail art look. <b> $50</b></h5>
+      <h5>The producedure is automated, and therefore it takes very less time to get the desired nail art look. <b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Airbrush Nail Art Technique</h1>
+      <h1 style="font-size: 25px">Airbrush Nail Art Technique  $60</h1>
     </div>
     <div class="w3-container">
-      <h5>Airbrush machines are used for drizzling paint on nails. These are combined witch stencils or stickers to get desired look.<b> $60</b></h5>
+      <h5>Airbrush machines are used for drizzling paint on nails. These are combined witch stencils or stickers to get desired look.<b></b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Sharpie Nail Art</h1>
+      <h1 style="font-size: 25px">Sharpie Nail Art $70</h1>
     </div>
     <div class="w3-container">
-      <h5>Sharpie nails have the resemblance to watercolor paintings, and they actually look lovely.<b> $70</b></h5>
+      <h5>Sharpie nails have the resemblance to watercolor paintings, and they actually look lovely.<b> </b></h5>
     </div>
   </div>
 </div>

@@ -5,6 +5,7 @@
     $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
     $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya
     $nama = $_SESSION["nama"];
+    $phone =$_SESSION['no_hp'];
 
 ?>
 <!DOCTYPE html>

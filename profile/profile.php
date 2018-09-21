@@ -107,9 +107,10 @@
                         
                       </tbody>
                     </table>
-                    
                     <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <a href="delete.php" class="btn btn-primary">Delete</a>
+                    <button type="submit" class="submit" id="btnDelete" name="delete">Delete</button>
+                    <!-- <a href="updateProfile.php" class="btn btn-primary">Edit</a>
+                    <a href="delete.php" class="btn btn-primary">Delete</a> -->
                   </div>
                     
                 </div>

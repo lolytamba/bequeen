@@ -106,8 +106,8 @@
                         </tr>
                       </tbody>
                     </table>
-                    <!-- <a href="update.php" class="btn btn-primary">Save</a> -->
-                    <div class ="buttonDelete" class='btn btn-primary center-block'> <a href="update.php" class="btn btn-primary">SAVE</a></div>
+                    <button type="submit" class="submit" id="btnUpdate" name="update">SAVE</button>
+                    <!-- <div class ="buttonDelete" class='btn btn-primary center-block'> <a href="update.php" class="btn btn-primary">SAVE</a></div> -->
                     <span id="errorMsg" style="display: none"></span>
                   </div>
 

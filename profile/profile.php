@@ -83,22 +83,22 @@
 
                         <tr>
                           <td>Full Name:</td> 
-                          <td><input id="name" type="hidden" name="nama" value="<?php echo $nama ?>" required></td>
+                          <td><input id="name" type="text" name="nama" value="<?php echo $nama ?>" required></td>
                         </tr>
 
                         <tr>
                           <td>Email</td>
-                          <td><input id="email" type="hidden" name="nama" value="<?php echo $email ?>" required></td>
+                          <td><input id="email" type="text" name="nama" value="<?php echo $email ?>" required></td>
                         </tr>
 
                         <tr>
                           <td>Phone Number</td>
-                          <td><input id="no_hp" type="hidden" name="no_hp" value="<?php echo $phone ?>" required></td>
+                          <td><input id="no_hp" type="text" name="no_hp" value="<?php echo $phone ?>" required></td>
                         </tr>
 
                         <tr>
                           <td>Status</td>
-                          <td><input id="status" type="hidden" name="status" value="<?php if($status =='1'){
+                          <td><input id="status" type="text" name="status" value="<?php if($status =='1'){
                                   echo 'Active';
                                 }
                                 ?>" required>

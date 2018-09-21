@@ -23,6 +23,9 @@
                 session_start();
                 $_SESSION["id"] = $row['id_user'];
                 $_SESSION["email"] = $row['email'];
+                $_SESSION["nama"] = $row['nama'];
+                $_SESSION["phone"] = $row['no_hp'];
+                $_SESSION["status"] = $row['status'];
 
                 header("Location: ../Booking/booking.php");
             }else{
@@ -33,6 +36,7 @@
         }
         else{
             echo 'Anda belum verify email!';
+            echo 'tambahin anda belum register juga';
         }        
     }
 ?>

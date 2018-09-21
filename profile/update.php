@@ -8,7 +8,7 @@
         $password       =$_POST['password'];
         $password_hash  = password_hash($password, PASSWORD_DEFAULT);
 
-        $update = mysqli_query($con, "UPDATE register SET nama='$nama', no_hp='$phone', password='$password_hash'  WHERE email='$email' ") or die(mysqli_error($con));
+        $update = mysqli_query($con, "UPDATE register SET nama='$nama', no_hp = '$phone', password = '$password_hash' where email = '$email' ");
         if($update){
             echo 'Profile updated';
             header('location : profile.php');

@@ -29,9 +29,9 @@
   <a href="profile.php"class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?>!</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.php" class="w3-bar-item w3-button">HOME</a>
-      <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-      <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+      <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
+      <a href="../Service.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="../Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="../login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
     </div>

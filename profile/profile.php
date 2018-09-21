@@ -14,7 +14,6 @@
 <title>Profile</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="tampilan.css">
@@ -22,12 +21,14 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/BeQueen.css">
+<link rel="stylesheet" type="text/css" href="../css/w3.css">
+
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="profile.php"class="w3-bar-item w3-button w3-wide">"Hi, <?php echo $nama;?></a>
+    <a href="profile.php"class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?>!</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
@@ -59,7 +60,7 @@
 
 
 <!-- Profile Section -->
-<div class="w3-container" style="padding:128px 16px;background-color:#00BFFF" id="about">
+<div class="w3-container w3-light-blue" style="padding:128px 16px" id="about">
     <div class="container">
         <div class="row">
         <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
@@ -109,7 +110,7 @@
                       </tbody>
                     </table>
                     <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <button type="submit" class="submit" id="btnDelete" name="del">Delete</button>
+                    <button type="submit" class="submit" id="btnDelete" name="del9">Delete</button>
                     <!-- <a href="updateProfile.php" class="btn btn-primary">Edit</a>
                     <a href="delete.php" class="btn btn-primary">Delete</a> -->
                   </div>

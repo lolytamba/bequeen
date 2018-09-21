@@ -109,7 +109,7 @@
                     <!-- <div class ="buttonDelete" class='btn btn-primary center-block'> <a href="update.php" class="btn btn-primary">SAVE</a></div> -->
                     <span id="errorMsg" style="display: none"></span>
                   </div>
-
+                </form>
               </div>
             </div>
           </div>

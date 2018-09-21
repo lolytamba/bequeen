@@ -77,13 +77,14 @@
                 <div class="row">
                   <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
                   
+                  <form action="delete.php" method="post" name="delete" id="delete" onsubmit="return cekform()">
                   <div class=" col-md-9 col-lg-9 "> 
                     <table class="table table-user-information">
                       <tbody>
 
                         <tr>
                           <td>Full Name:</td> 
-                          <td><input id="name" name="nama" value="<?php echo $nama ?>" size ="40" disabled></td>
+                          <td><input id="name"  name="nama" value="<?php echo $nama ?>" size ="40" disabled></td>
                         </tr>
 
                         <tr>
@@ -108,11 +109,11 @@
                       </tbody>
                     </table>
                     <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <button type="submit" class="submit" id="btnDelete" name="delete">Delete</button>
+                    <button type="submit" class="submit" id="btnDelete" name="del">Delete</button>
                     <!-- <a href="updateProfile.php" class="btn btn-primary">Edit</a>
                     <a href="delete.php" class="btn btn-primary">Delete</a> -->
                   </div>
-                    
+                  </form>  
                 </div>
               </div>
               

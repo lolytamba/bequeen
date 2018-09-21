@@ -76,7 +76,7 @@
                 <div class="row">
                   <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
                   
-                  <form action="delete.php" method="post" name="delete" id="delete" onsubmit="return cekform()">
+                  <form action="delete.php" method="post" name="del" id="delete" onsubmit="return cekform()">
                   <div class=" col-md-9 col-lg-9 "> 
                     <table class="table table-user-information">
                       <tbody>
@@ -108,7 +108,7 @@
                       </tbody>
                     </table>
                     <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <button type="submit" class="submit" id="btnDelete" name="del9">Delete</button>
+                    <button type="submit" class="submit" id="btnDelete" name="del">Delete</button>
                     <!-- <a href="updateProfile.php" class="btn btn-primary">Edit</a>
                     <a href="delete.php" class="btn btn-primary">Delete</a> -->
                   </div>

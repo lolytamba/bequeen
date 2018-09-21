@@ -11,6 +11,8 @@
         $update = mysqli_query($con, "UPDATE register SET nama='$nama', no_hp = '$phone', password = '$password_hash' where email = '$email' ");
         if($update){
             echo 'Profile updated';
+            $_SESSION['nama'] = $nama;
+            $_SESSION['phone'] = $phone;
             header("Location: profile.php");
         }else{
             echo 'Failed updated profile';

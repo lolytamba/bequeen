@@ -28,7 +28,7 @@
     <a href="../profile/profile.php" class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?>! </a> 
   
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right w3-hide-smal l">
       <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="../Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <a href=#book class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>

@@ -100,8 +100,6 @@
           <option value="Gothic Makeup">Gothic Makeup</option>
         </select>
 
-        
-
         <p><label>Tanggal Kedatangan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Kedatangan" name="arrival"></p>
         <p><label>Tanggal Pemesanan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Pemesanan" name="bookDate"></p>
         <p>

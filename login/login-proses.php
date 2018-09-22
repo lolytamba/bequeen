@@ -8,35 +8,38 @@
         $sql2="SELECT status FROM register WHERE email='".$email."'";
         $result2=mysqli_query($con,$sql2);
         $row2=mysqli_fetch_assoc($result2);
+       
+       if(mysqli_num_rows($result2) == 0){
+            echo 'Anda belum register';
+       }else{
+            if($row2['status']=='1'){
+                $sql="SELECT password FROM register WHERE email='".$email."'";
+                $result=mysqli_query($con,$sql);
+                $row=mysqli_fetch_assoc($result); //data diambil trus jadi bentuk array
 
-        if($row2['status']=='1'){
-            $sql="SELECT password FROM register WHERE email='".$email."'";
-            $result=mysqli_query($con,$sql);
-            $row=mysqli_fetch_assoc($result); //data diambil trus jadi bentuk array
+                if(password_verify($password,$row['password'])){
+                    $sql="SELECT * FROM register WHERE email='".$email."'";
+                    $result=mysqli_query($con,$sql); //jalanin sql
+                    $row=mysqli_fetch_assoc($result);
 
+                    session_start();
+                    $_SESSION["id"] = $row['id_user'];
+                    $_SESSION["email"] = $row['email'];
+                    $_SESSION["nama"] = $row['nama'];
+                    $_SESSION["phone"] = $row['no_hp'];
+                    $_SESSION["status"] = $row['status'];
 
-            if(password_verify($password,$row['password'])){
-                $sql="SELECT * FROM register WHERE email='".$email."'";
-                $result=mysqli_query($con,$sql); //jalanin sql
-                $row=mysqli_fetch_assoc($result);
-
-                session_start();
-                $_SESSION["id"] = $row['id_user'];
-                $_SESSION["email"] = $row['email'];
-                $_SESSION["nama"] = $row['nama'];
-                $_SESSION["phone"] = $row['no_hp'];
-                $_SESSION["status"] = $row['status'];
-
-                header("Location: ../Booking/booking.php");
-            }else{
-                echo "<script>alert('password atau email salah ')
-                            window.history.back()</script>";
+                    header("Location: ../Booking/booking.php");
+                }else{
+                    echo "<script>alert('password atau email salah ')
+                                window.history.back()</script>";
+                }
             }
-
-        }
-        else{
-            echo 'Anda belum verify email!';
-            echo 'tambahin anda belum register juga';
-        }        
+            else{
+                echo 'Anda belum verify email!';
+            }        
+        } 
     }
 ?>
+
+ 

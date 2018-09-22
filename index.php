@@ -9,19 +9,27 @@
 <link rel="stylesheet" type="text/css" media="screen" href="vendor/boostrap/dist/css/bootstrap.min.css" />
 
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
+<?php 
+session_start();
+if($_SESSION['id']){
+  $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
+  $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya
+  $nama = $_SESSION["nama"];
+  $phone =$_SESSION['phone'];
+  
+?>
+ <!-- Navbar (sit on top) -->
+ <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="../profile/profile.php" class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?> </a> 
+  
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      
-      <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+      <a href="../login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -31,6 +39,31 @@
   </div>
 </div>
 
+<?php
+}else{
+?>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-bar w3-blue w3-card" id="myNavbar">
+  <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+  <!-- Right-sided navbar links -->
+  <div class="w3-right w3-hide-small">
+    <a href="index.php" class="w3-bar-item w3-button">HOME</a>
+    <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+    <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+    <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+  </div>
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+<?php }
+?>
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
@@ -118,22 +151,22 @@
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-light-blue w3-display-container">
       <span onclick="document.getElementById('hair').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1 style="font-size: 25px">Straight Hair</h1>
+      <h1 style="font-size: 25px">Straight Hair $20</h1>
     </div>
     <div class="w3-container">
-      <h5>Straight Hair is very hard to damage, and also difficult to curl <b> $20</b></h5>
+      <h5>Straight Hair is very hard to damage, and also difficult to curl <b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Wavy Hair</h1>
+      <h1 style="font-size: 25px">Wavy Hair $30<h1>
     </div>
     <div class="w3-container">
-      <h5>Wavy Hair has a texture and sheen between straight and curly hair and is likely to become fizzy<b> $30</b></h5>
+      <h5>Wavy Hair has a texture and sheen between straight and curly hair and is likely to become fizzy<b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Curly Hair</h1>
+      <h1 style="font-size: 25px">Curly Hair $40</h1>
     </div>
     <div class="w3-container">
-      <h5>The pattern of the hair resembles an 'S' shape and sometimes a 'Z' shape<b> $40</b></h5>
+      <h5>The pattern of the hair resembles an 'S' shape and sometimes a 'Z' shape<b> </b></h5>
     </div>
   </div>
 </div>
@@ -143,22 +176,22 @@
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-light-blue w3-display-container">
       <span onclick="document.getElementById('nail').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1 style="font-size: 25px">Digi World Nail Art</h1>
+      <h1 style="font-size: 25px">Digi World Nail Art $50</h1>
     </div>
     <div class="w3-container">
-      <h5>The producedure is automated, and therefore it takes very less time to get the desired nail art look. <b> $50</b></h5>
+      <h5>The producedure is automated, and therefore it takes very less time to get the desired nail art look. <b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Airbrush Nail Art Technique</h1>
+      <h1 style="font-size: 25px">Airbrush Nail Art Technique  $60</h1>
     </div>
     <div class="w3-container">
-      <h5>Airbrush machines are used for drizzling paint on nails. These are combined witch stencils or stickers to get desired look.<b> $60</b></h5>
+      <h5>Airbrush machines are used for drizzling paint on nails. These are combined witch stencils or stickers to get desired look.<b></b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Sharpie Nail Art</h1>
+      <h1 style="font-size: 25px">Sharpie Nail Art $70</h1>
     </div>
     <div class="w3-container">
-      <h5>Sharpie nails have the resemblance to watercolor paintings, and they actually look lovely.<b> $70</b></h5>
+      <h5>Sharpie nails have the resemblance to watercolor paintings, and they actually look lovely.<b> </b></h5>
     </div>
   </div>
 </div>

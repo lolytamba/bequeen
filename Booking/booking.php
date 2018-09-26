@@ -6,12 +6,10 @@
     $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya
     $nama = $_SESSION["nama"];
     $phone =$_SESSION['phone'];
-    
-
 ?>
 <!DOCTYPE html>
 <html>
-<title>BOOKING</title>
+<title>Booking</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -69,8 +67,10 @@
           <option value="Service">Service</option>
           <option value="Paket">Paket</option>
         </select>
-
-        <select name="Ser" style="display:none" id="service" onchange="showSelection()">
+  
+        <select name="Ser" style="display:none" id="service" onchange="serSelection()">
+          <option value="Service1">---Service---</option>
+          <option value="Paket1">---Paket---</option>
           <option value="hair">Hair Styling</option>
           <option value="nail">Nail Art</option>
           <option value="makeup">Make Up</option>
@@ -82,19 +82,19 @@
           <option value="Premium">Premium</option>
         </select>
 
-        <select name="SerPac" style="display:none" id="hair" onchange="showSelection()">
+        <select name="SerPac" style="display:none" id="hair" onchange="serSelection()">
           <option value="Straight Hair">Straight Hair</option>
           <option value="Wavy Hair">Wavy Hair</option>
           <option value="Curly Hair">Curly Hair</option>
         </select>
 
-        <select name="SerPac" style="display:none" id="nail" onchange="showSelection()">
+        <select name="SerPac" style="display:none" id="nail" onchange="serSelection()">
           <option value="Digi World Nail Art">Digi World Nail Art</option>
           <option value="Airbrush Nail Art Technique">Airbrush Nail Art Technique</option>
           <option value="Sharpie Nail Art">Sharpie Nail Art</option>
         </select>
 
-        <select name="SerPac" style="display:none" id="makeup" onchange="showSelection()">
+        <select name="SerPac" style="display:none" id="makeup" onchange="serSelection()">
           <option value="Natural Makeup">Natural Makeup</option>
           <option value="Bridal Makeup">Bridal Makeup</option>
           <option value="Gothic Makeup">Gothic Makeup</option>
@@ -103,13 +103,14 @@
         <p><label>Tanggal Kedatangan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Kedatangan" name="arrival"></p>
         <p><label>Tanggal Pemesanan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Pemesanan" name="bookDate"></p>
         <p>
-          <button class="w3-button" id="btn_add" type="submit" style="margin: 12px 280px">
+          <button class="w3-button" id="btn_add" name="booking" type="submit" style="margin: 12px 280px">
             <i class="fa fa-paper-plane"></i> BOOK
+            
           </button>
         </p>
       </form>
     </div>
-    <div id="live_data"></div>
+    <!-- <div id="live_data"></div> -->
   </div>
 </div>
 
@@ -153,7 +154,7 @@
 <script src="../js/style.js"></script>
 </body>
 
-<script>
+<!-- <script>
   $(document).ready(function(){
     function fetch_data(){
       $.ajax({
@@ -232,7 +233,7 @@
 
     });
   });
-</script>
+</script> -->
 </html>
 
 <?php

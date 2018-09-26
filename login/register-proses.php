@@ -51,13 +51,9 @@ if(isset($_POST['register']))
 				$mail->Subject = 'Website Contact From:  Bequeen';
 				$mail->Body = '
 
-				Thanks for signing up!
+				Thanks, '.$nama.' for signing up!
 				Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
-
-				------------------------
-				Full name: '.$nama.'
-				------------------------
-
+				
 				Please click this link to activate your account:
 				https://bequuen.thekingcorp.org/verify.php?active='.$active.'
 
@@ -75,7 +71,6 @@ if(isset($_POST['register']))
 		else
 		{
 			echo 'Gagal terdaftar! ';
-			//echo '<a href="still_found.php">Kembali</a>';
 		}
 	}
 }

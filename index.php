@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<!-- cek -->
 <html>
 <title>BeQueen</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/w3.css">
 <link rel="stylesheet" type="text/css" href="css/BeQueen.css">
 <link rel="stylesheet" type="text/css" media="screen" href="vendor/boostrap/dist/css/bootstrap.min.css" />
@@ -46,7 +48,7 @@ if($_SESSION['id']){
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
 <div class="w3-bar w3-blue w3-card" id="myNavbar">
-  <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+  <a href="#home" class="w3-bar-item w3-button w3-wide">BeQueen</a>
   <!-- Right-sided navbar links -->
   <div class="w3-right w3-hide-small">
     <a href="index.php" class="w3-bar-item w3-button">HOME</a>

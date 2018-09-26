@@ -10,7 +10,7 @@
         $row2=mysqli_fetch_assoc($result2);
        
        if(mysqli_num_rows($result2) == 0){
-            echo 'Anda belum register';
+            echo '<script language="javascript">alert("Anda belum register!"); document.location="login.php";</script>';
        }else{
             if($row2['status']=='1'){
                 $sql="SELECT password FROM register WHERE email='".$email."'";

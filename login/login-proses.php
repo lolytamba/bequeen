@@ -10,7 +10,7 @@
         $row2=mysqli_fetch_assoc($result2);
        
        if(mysqli_num_rows($result2) == 0){
-            echo '<script language="javascript">alert("Anda belum register!"); document.location="login.php";</script>';
+            echo '<script language="javascript">alert("Your account not registered yet!"); document.location="login.php";</script>';
        }else{
             if($row2['status']=='1'){
                 $sql="SELECT password FROM register WHERE email='".$email."'";
@@ -31,12 +31,12 @@
 
                     header("Location: ../Booking/booking.php");
                 }else{
-                    echo "<script>alert('Password atau Email salah!')
+                    echo "<script>alert('Password Not Match.')
                                 window.history.back()</script>";
                 }
             }
             else{
-                echo 'Anda belum verify email!';
+                echo "<script>alert('Verify Your Email Address')";
             }        
         } 
     }

@@ -27,9 +27,9 @@ if($_SESSION['id']){
     <div class="w3-right w3-hide-small">
       <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="../Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-      <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+      <a href="../Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
+      <a href="../login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -51,9 +51,9 @@ if($_SESSION['id']){
   <div class="w3-right w3-hide-small">
     <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
     <a href="../Service.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-    <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+    <a href="../Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
     <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+    <a href="../login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
   </div>
   <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -74,11 +74,11 @@ if($_SESSION['id']){
 <!-- Packet Section -->
 <div class="w3-container w3-center w3-light" style="padding-bottom: 80px" id="packet">
   <h3>My Feedback</h3>
-  <div class="w3-container w3-center w3-light" style="margin-left: 150px">
+  <div class="w3-container w3-center w3-light" style="margin-left: 350px">
     <table cellpadding="10" cellspacing="0" border="2">
         <tr class = "w3-light-blue">
             <th width="10%">No.</th>
-            <th>ID Pemesan</th>
+            <th>Order ID</th>
             <th width="50%">Feedback</th>
             <th width="25%">Action</th>
         </tr>

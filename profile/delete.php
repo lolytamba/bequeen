@@ -7,14 +7,14 @@
     $cek=mysqli_query($con, "SELECT id_user from register where id_user ='$id'")or die(mysqli_connect_error());
 
     if(mysqli_num_rows($cek) == 0){
-      echo 'User gak ada';
+      echo 'User not found';
     }else{
       $del=mysqli_query($con, "DELETE FROM register WHERE id_user='$id'") or die(mysqli_connect_error());
       if ($del) {
-        echo "Data Deleted";
+        echo "<script>alert('Account Deleted')";
         header('Location: ../login/login.php');
       }else{
-        echo 'Gak kehapus';
+        echo "<script>alert('Gak kehapus')";
       }
     }
   }

@@ -74,5 +74,22 @@ function cekform2(){
         return true;
 }
 
+function cekform3(){
+    var sMsg="";
+    
+    if(document.forms["feedback"]["message"].value==""){
+        sMsg +=("Feedback is Empty!");
+    }
+   
+    if(sMsg!=""){
+        alert("Warning: \n" +sMsg);
+        return false;
+    }
+    else    
+        return true;
+}
+
+
+
 
 

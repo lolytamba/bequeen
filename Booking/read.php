@@ -62,6 +62,7 @@ if($_SESSION['id']){
   </a>
 </div>
 </div>
+
 <?php }
 ?>
 
@@ -69,8 +70,6 @@ if($_SESSION['id']){
 <header class="bgimg-1 w3-display-container" id="home"></header>
 
 <body>
-    
-
 <!-- Packet Section -->
 <div class="w3-container w3-center w3-light" style="padding-bottom: 80px" id="packet">
   <h3>My Booking</h3>

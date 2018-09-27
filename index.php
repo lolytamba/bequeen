@@ -80,7 +80,7 @@ if($_SESSION['id']){
 <header class="bgimg-1 w3-display-container" id="home"></header>
 
 <!-- Welcome Section -->
-<div class="w3-container" id="home-tengah" style = "padding-top: 100px">
+<div class="w3-container" id="home-tengah">
   <div class="w3-row-padding" >
     <table>
       <td><img src="images/welcome.jpg" alt=""></td>
@@ -94,7 +94,7 @@ if($_SESSION['id']){
 </div>
 
 <!-- Services Section - "Services" -->
-<div class="w3-container w3-light-grey" id="service" style = "padding-top: 60px">
+<div class="w3-container w3-light-grey" id="service" style = "padding-top: 10px">
     <div class="w3-row-padding w3-light-blue">
     <div class="w3-col m6 ourServiceText " >
       <h3>Our Services</h3>
@@ -112,7 +112,7 @@ if($_SESSION['id']){
   <p class="w3-center w3-large">What we've done for our customers</p>
   <div class="w3-row-padding" style="margin-top:64px">
 
-    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 30px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 70px">
       <div class="w3-card">
         <img src="images/hair.jpg" alt="Hair" style="width:100%; height: 230px">
         <div class="w3-container">

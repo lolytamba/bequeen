@@ -1,5 +1,6 @@
 <?php
   include('../koneksi.php');
+  
   if(isset($_POST['booking'])){  
     if($_POST['SP'] == 'Service'){
       if($_POST['Ser']=='hair'){
@@ -37,8 +38,6 @@
 
 
     if ($result) {
-      
-     
       echo "<script>alert('Booking Inserted!')
           window.history.back()</script>";
     }

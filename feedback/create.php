@@ -1,6 +1,6 @@
 <?php
   include('../koneksi.php');
-    if(isset($_POST['feedback'])){  
+    if(isset($_POST['send'])){  
         session_start();
         $id = $_SESSION['id'];
         

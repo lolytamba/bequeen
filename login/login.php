@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="vendor/boostrap/dist/css/bootstrap.min.css" /> -->
 
-  
 </head>
-
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">

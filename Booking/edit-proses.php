@@ -11,6 +11,8 @@
           $SerPac = $_POST['SerPac2'];
         }else if($_POST['Ser']=='makeup'){
           $SerPac = $_POST['SerPac3'];
+        }else{
+            $SerPac = $_POST['SerPac4'];
         }
 
         $arrival    =$_POST['arrival'];

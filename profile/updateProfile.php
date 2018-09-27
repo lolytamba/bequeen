@@ -58,7 +58,7 @@
 <header class="bgimg-1 w3-display-container" id="home"></header>
 
 <!-- Edit Section -->
-<div class="w3-container w3-light-blue" style="padding:128px 16px;background-color:#00BFFF" id="about">
+<div class="w3-container w3-light-grey" style="background-color:#00BFFF" id="about">
   <div class="container">
       <div class="row">
       <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
@@ -72,7 +72,7 @@
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3 col-lg-3 " style="text-align: center"> <img  src="terupload/<?php echo $foto;?>" style="float:right;" height="125" width="125"></div>
+                <div class="col-md-3 col-lg-3 " style="text-align: center"> <img  src="terupload/<?php echo $foto;?>" style="float:right;" height="135" width="100"></div>
                 
                 <form action = "update.php" method="post" id="update" name="update" onsubmit="return cekform()">
                   <td><input id="id" type="hidden" name="id" value="<?php echo $id;?>" required></td>
@@ -106,8 +106,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="submit" id="btnUpdate" name="update">SAVE</button>
-                    <!-- <div class ="buttonDelete" class='btn btn-primary center-block'> <a href="update.php" class="btn btn-primary">SAVE</a></div> -->
+                    <button type="submit" class="submit w3-button w3-black" id="btnUpdate" name="update">SAVE</button>
                     <span id="errorMsg" style="display: none"></span>
                   </div>
                 </form>
@@ -121,23 +120,14 @@
 </div>
  
  <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-light-blue" style="padding-bottom: 30px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Send us a Message</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Yogyakarta, Indonesia</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +0274 67890</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>  Email: Bequeen@hair-beauty.com</p>
       <br>
-      <form action="/action_page.php" target="_blank">
-        <textarea class="w3-input w3-border" rows="5" id="message" placeholder="Message"></textarea>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
     </div>
     <div class="w3-half">
       <!-- Add Google Maps -->

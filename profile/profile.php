@@ -78,13 +78,13 @@
                   <div class="col-12" style="text-align: center"> 
                   <div class="row" style="margin-bottom: 20px;">
                       <div class="col-lg-6  col-md-6 col-sm-6 ">
-                        <img  src="terupload/<?php echo $foto;?>" style="float:right;" height="125" width="125">
+                        <img  src="terupload/<?php echo $foto;?>" style="float:center;" height="125" width="125">
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-6">
                         <input type="file" name="uploadfile" />
                       </div>
                     </div>
-                    <input type="submit" name="uploadfilesub" value="Upload" />
+                    <input type="submit" name="uploadfilesub" value="Upload" class="w3-button w3-black" style="margin-bottom: 20px; margin-right: 300px"/>
                   </form>
                   </div>
                   
@@ -119,10 +119,8 @@
                         
                       </tbody>
                     </table>
-                    <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <button type="submit" class="submit" id="btnDelete" name="del">Delete</button>
-                    <!-- <a href="updateProfile.php" class="btn btn-primary">Edit</a>
-                    <a href="delete.php" class="btn btn-primary">Delete</a> -->
+                    <a href="updateProfile.php" class="w3-button w3-black">Edit</a>
+                    <button type="submit" class="submit w3-button w3-black" id="btnDelete" name="del">Delete</button>
                   </div>
                   </form>  
                 </div>
@@ -140,7 +138,7 @@
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a title="BeQueen" href = "../index.php" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
+  <p>Powered by <a title="BeQueen" href = "../index.php" target="_blank" class="w3-hover-text-blue">BeQueen</a></p>
 </footer>
  
 <script src="vendor/jquery/dist/jquery.min.js"></script>

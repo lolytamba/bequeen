@@ -16,8 +16,8 @@ if($_SESSION['id']){
   $SP = $_SESSION["SP"];
   $Ser = $_SESSION["Ser"];
   $SerPac =$_SESSION['SerPac'];
-  $arrival =$_SESSION['arrival'];
-  $bookDate =$_SESSION['bookDate'];
+  // $arrival =$_SESSION['arrival'];
+  // $bookDate =$_SESSION['bookDate'];
 
 ?>
  <!-- Navbar (sit on top) -->
@@ -82,7 +82,7 @@ if($_SESSION['id']){
         $show =mysqli_query($con,"SELECT *FROM test_book WHERE id='$id'");
 
         if(mysqli_num_rows($show)==0){
-            echo '<a href="read.php">Kembali</a>';
+            echo 'Empty';
         }
         else{
             $data=mysqli_fetch_assoc($show);
@@ -143,7 +143,7 @@ if($_SESSION['id']){
          <tr>
                 <td>&nbsp;</td>
                 <td></td>
-                <td><input type="submit" name="edit" value="Save" class="w3-button w3-black" style="margin-left: 315px"></td>
+                <td><input type="submit" name="edit" id="edit" value="Save" class="w3-button w3-black" style="margin-left: 315px"></td>
             </tr>
       </form>
  

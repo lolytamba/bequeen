@@ -9,8 +9,8 @@
 
     if($row['status']=='0'){
         mysqli_query($con, "UPDATE register SET status='1' WHERE active='".$active."' ") or die(mysqli_connect_error());
-        echo '<script language="javascript">alert("Your account has be actived, you can now login!"); document.location="login/login.php";</script>';
+        echo 'Udah active';
     }else{
-        echo "<script>alert('The url is either invalid or you already have activated your account.')";
+        echo "Belum aktif";
     }
 ?>

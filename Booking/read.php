@@ -88,7 +88,7 @@ if($_SESSION['id']){
 
         <?php 
             include('../koneksi.php');
-            $query= mysqli_query($con,"SELECT * FROM test_book WHERE id='$id'") or die(mysqli_connect_error());
+            $query= mysqli_query($con,"SELECT * FROM test_book WHERE user='$id'") or die(mysqli_connect_error());
             if(mysqli_num_rows($query)==0)
             {
                 echo '<tr><td colspan="8">Tidak ada Data! <a href="booking.php" class="w3-button w3-black" style="margin-left: 20px">

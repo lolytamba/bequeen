@@ -85,7 +85,7 @@ if($_SESSION['id']){
 
         <?php 
             include('../koneksi.php');
-            $query= mysqli_query($con,"SELECT * FROM feedback WHERE id='$id'") or die(mysqli_connect_error());
+            $query= mysqli_query($con,"SELECT * FROM feedback WHERE user='$id'") or die(mysqli_connect_error());
             if(mysqli_num_rows($query)==0)
             {
                 echo '<tr><td colspan="4">Tidak ada Data! <a href="../Services.php#contact" class="w3-button w3-black" style="margin-left: 20px">

@@ -29,7 +29,7 @@ if($_SESSION['id']){
     <div class="w3-right w3-hide-small">
       <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="../Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-      <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+      <a href="../Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
     </div>
@@ -53,7 +53,7 @@ if($_SESSION['id']){
   <div class="w3-right w3-hide-small">
     <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
     <a href="../Service.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-    <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+    <a href="../Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
     <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
   </div>
@@ -141,9 +141,9 @@ if($_SESSION['id']){
         <p><label>Tanggal Pemesanan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Pemesanan" name="bookDate" value="<?php echo $data['bookDate']; ?>" required ></p>
       
          <tr>
-                <td>&nbsp;</td>
-                <td></td>
-                <td><input type="submit" name="edit" id="edit" value="Save" class="w3-button w3-black" style="margin-left: 315px"></td>
+              <td>&nbsp;</td>
+              <td></td>
+              <td><input type="submit" name="edit" id="edit" value="Save" class="w3-button w3-black" style="margin-left: 315px"></td>
             </tr>
       </form>
  

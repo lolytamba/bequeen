@@ -90,7 +90,6 @@ if($_SESSION['id']){
     
     
     <form action="edit-proses.php" method="post">
-        <input type="hidden" name="id" value="<?php echo $id; ?>">
         <table cellpadding="10" cellspacing="0" style="margin-left: 250px">
             <tr>
                 <td>New feedback</td>

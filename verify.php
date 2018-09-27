@@ -10,6 +10,7 @@
     if($row['status']=='0'){
         mysqli_query($con, "UPDATE register SET status='1' WHERE active='".$active."' ") or die(mysqli_connect_error());
         echo 'Udah active';
+        header('Location: login/login.php');
     }else{
         echo "Belum aktif";
     }

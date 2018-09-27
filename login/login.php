@@ -113,12 +113,6 @@
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black" style="padding-top: 30px">
-  <a href="login.php" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a title="BeQueen" href = "../index.php" target="_blank" class="w3-hover-text-blue">BeQueen</a></p>
-</footer>
-
 <script src="../jquery/dist/jquery.min.js"></script>
 <script src="../boostrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

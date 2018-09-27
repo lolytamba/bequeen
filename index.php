@@ -184,7 +184,7 @@ if($_SESSION['id']){
       <h5>The producedure is automated, and therefore it takes very less time to get the desired nail art look. <b> </b></h5>
     </div>
     <div class="w3-container w3-light-blue">
-      <h1 style="font-size: 25px">Airbrush Nail Art Technique  $60</h1>
+      <h1 style="font-size: 25px">Airbrush Nail Art Technique $60</h1>
     </div>
     <div class="w3-container">
       <h5>Airbrush machines are used for drizzling paint on nails. These are combined witch stencils or stickers to get desired look.<b></b></h5>

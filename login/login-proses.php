@@ -15,7 +15,7 @@
             if($row2['status']=='1'){
                 $sql="SELECT password FROM register WHERE email='".$email."'";
                 $result=mysqli_query($con,$sql);
-                $row=mysqli_fetch_assoc($result); //data diambil trus jadi bentuk array
+                $row=mysqli_fetch_assoc($result); 
 
                 if(password_verify($password,$row['password'])){
                     $sql="SELECT * FROM register WHERE email='".$email."'";
@@ -31,7 +31,7 @@
 
                     header("Location: ../Booking/booking.php");
                 }else{
-                    echo "<script>alert('password atau email salah ')
+                    echo "<script>alert('Password atau Email salah!')
                                 window.history.back()</script>";
                 }
             }

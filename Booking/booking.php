@@ -3,9 +3,6 @@
   session_start();
   if($_SESSION["email"]){
     $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
-    $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya
-    $nama = $_SESSION["nama"];
-    $phone =$_SESSION['phone'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,83 +52,83 @@
 </header>
 
 <!-- Booking Section -->
-<div class="w3-container w3-light-blue" id="book">
+<div class="w3-container w3-light-grey" id="book">
   <h3 class="w3-center" id="judulBook">MY BOOKING</h3>
   <div class="w3-row-padding" style="margin-top:10px">
     <div class="w3-half">
 
-      <form>
+      <form action="insert.php" method="post">
         <label>Service/Paket</label>
-        <select id="SP" name="SP" onchange="showSelection()">
+        <select id="ShowSelection" name="SP" onchange="showSelection()" style="display:block">
           <option value="">---Service/Paket---</option>
           <option value="Service">Service</option>
           <option value="Paket">Paket</option>
         </select>
   
         <select name="Ser" style="display:none" id="service" onchange="serSelection()">
-          <option value="Service1">---Service---</option>
-          <option value="Paket1">---Paket---</option>
+          <option value="">---Service---</option>
           <option value="hair">Hair Styling</option>
           <option value="nail">Nail Art</option>
           <option value="makeup">Make Up</option>
         </select>
 
-        <select name="SerPac" style="display:none" id="paket" onchange="showSelection()">
-          <option value="Basic">Basic</option>
-          <option value="Pro">Pro</option>
-          <option value="Premium">Premium</option>
-        </select>
-
-        <select name="SerPac" style="display:none" id="hair" onchange="serSelection()">
+        <select name="SerPac1" style="display:none" id="hair" onchange="serSelection()">
+          <option value=""></option>
           <option value="Straight Hair">Straight Hair</option>
           <option value="Wavy Hair">Wavy Hair</option>
           <option value="Curly Hair">Curly Hair</option>
         </select>
 
-        <select name="SerPac" style="display:none" id="nail" onchange="serSelection()">
+        <select name="SerPac2" style="display:none" id="nail" onchange="serSelection()">
+          <option value=""></option>
           <option value="Digi World Nail Art">Digi World Nail Art</option>
           <option value="Airbrush Nail Art Technique">Airbrush Nail Art Technique</option>
           <option value="Sharpie Nail Art">Sharpie Nail Art</option>
         </select>
-
-        <select name="SerPac" style="display:none" id="makeup" onchange="serSelection()">
+      
+        <select name="SerPac3" style="display:none" id="makeup" onchange="serSelection()">
+          <option value=""></option>
           <option value="Natural Makeup">Natural Makeup</option>
           <option value="Bridal Makeup">Bridal Makeup</option>
           <option value="Gothic Makeup">Gothic Makeup</option>
         </select>
 
+        <select name="SerPac4" style="display:none" id="paket" >
+          <option value="">---Paket---</option>
+          <option value="Basic">Basic</option>
+          <option value="Pro">Pro</option>
+          <option value="Premium">Premium</option>
+        </select>
+
         <p><label>Tanggal Kedatangan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Kedatangan" name="arrival"></p>
         <p><label>Tanggal Pemesanan</label> <input class="w3-input w3-border" type="date" placeholder="Tanggal Pemesanan" name="bookDate"></p>
         <p>
-          <button class="w3-button" id="btn_add" name="booking" type="submit" style="margin: 12px 280px">
+          <button class="w3-button w3-black" id="btn_add" name="booking" type="submit" style="margin: 12px 280px">
             <i class="fa fa-paper-plane"></i> BOOK
-            
           </button>
         </p>
       </form>
+
+      <form action="read.php" method="post">
+          <p>
+            <button class="w3-button w3-black" id="btn_add" name="view" type="submit" style="margin: 12px 280px">
+              <i class="fa fa-paper-plane"></i> VIEW
+            </button>
+          </p>
+        </form>
     </div>
-    <!-- <div id="live_data"></div> -->
   </div>
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-light-blue" style="padding-bottom: 50px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Send us a Message</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Yogyakarta, Indonesia</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +0274 67890</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>  Email: Bequeen@hair-beauty.com</p>
       <br>
-      <form action="/action_page.php" target="_blank">
-        <textarea class="w3-input w3-border" rows="5" id="message" placeholder="Message"></textarea>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
     </div>
     <div class="w3-half">
       <!-- Add Google Maps -->
@@ -143,9 +140,9 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-black" style="padding-top: 50px">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a title="BeQueen" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
+  <p>Powered by <a title="BeQueen" target="_blank" href="..index.php" class="w3-hover-text-blue">BeQueen</a></p>
 </footer>
 
 <script src="../vendor/jquery/dist/jquery.min.js"></script>
@@ -154,86 +151,6 @@
 <script src="../js/style.js"></script>
 </body>
 
-<!-- <script>
-  $(document).ready(function(){
-    function fetch_data(){
-      $.ajax({
-        url:"select.php",
-        method:"POST",
-        success:function(data){
-          $('#live_data').html(data);
-        }
-      });
-    }
-    fetch_data();
-    $(document).on('click','#btn_add',function(){
-      $.ajax({
-        url:"insert.php",
-        method:"POST",
-        data:{SerPac:SerPac},
-        dataType:"text",
-        data:{arrival:arrival,bookDate:bookDate},
-        dataType:"date",
-        success:function(data){
-          alert(data);
-          fetch_data();
-        }
-      });
-    });
-    function edit_data_text(id,text,column_name){
-      $.ajax({
-        url:"edit.php",
-        method:"POST",
-        data:{id:id,text:text,column_name:column_name},
-        dataType:"text",
-        success:function(data){
-          alert(data);
-        }
-      });
-    }
-    function edit_data_date(id,date,column_name){
-      $.ajax({
-        url:"edit.php",
-        method:"POST",
-        data:{id:id,date:date,column_name:column_name},
-        dataType:"text",
-        success:function(data){
-          alert(data);
-        }
-      });
-    }
-    $(document).on('blur','.SerPac',function(){
-      var id=$(this).data("id1");
-      var SerPac=$(this).text();
-      edit_data_text(id,SerPac,"SerPac");
-    });
-    $(document).on('blur','.arrival',function(){
-      var id=$(this).data("id2");
-      var arrival=$(this).date();
-      edit_data_date(id,arrival,"arrival");
-    });
-    $(document).on('blur','.bookDate',function(){
-      var id=$(this).data("id3");
-      var bookDate=$(this).date();
-      edit_data_date(id,bookDate,"bookDate");
-    });
-    $(document).on('click','.btn_delete',function(){
-      var id=$(this).data("id4");
-      if(confirm("Are you Sure?"))
-      $.ajax({
-        url:"delete.php",
-        method:"POST",
-        data:{id:id},
-        dataType:"text",
-        success:function(data){
-          alert(data);
-          fetch_data();
-        }
-      });
-
-    });
-  });
-</script> -->
 </html>
 
 <?php

@@ -32,6 +32,7 @@
                     $_SESSION["nama"] = $row['nama'];
                     $_SESSION["phone"] = $row['no_hp'];
                     $_SESSION["status"] = $row['status'];
+                    $_SESSION["foto"] = $row['foto'];
 
                     header("Location: ../Booking/booking.php");
                 }else{

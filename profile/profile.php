@@ -7,6 +7,7 @@
     $email = $_SESSION['email'];
     $phone =$_SESSION['phone'];
     $status = $_SESSION['status'];
+    $foto = $_SESSION['foto'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -74,10 +75,22 @@
               </div>
               <div class="panel-body">
                 <div class="row">
-                  <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
+                <form action="upload_function.php" method="post" enctype="multipart/form-data" >
+                  <div class="col-12" style="text-align: center"> 
+                  <div class="row" style="margin-bottom: 20px;">
+                      <div class="col-lg-6  col-md-6 col-sm-6 ">
+                        <img  src="terupload/<?php echo $foto;?>" style="float:right;" height="125" width="125">
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <input type="file" name="uploadfile" />
+                      </div>
+                    </div>
+                    <input type="submit" name="uploadfilesub" value="Upload" />
+                  </form>
+                  </div>
                   
                   <form action="delete.php" method="post" name="del" id="delete" onsubmit="return cekform()">
-                  <div class=" col-md-9 col-lg-9 "> 
+                  <div class=" col-md-12 col-lg-12 "> 
                     <table class="table table-user-information">
                       <tbody>
 

@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login/Registration Form Transition</title>
+  <title>Login</title>
   
-  
+
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 
       <link rel="stylesheet" href="../css/style.css">

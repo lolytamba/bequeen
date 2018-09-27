@@ -6,9 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
+
 <body class="w3-light-grey">
 
 <?php 
@@ -21,13 +23,13 @@ session_start();
 ?>
 
 <?php
-            include('../koneksi.php');
-            $sql="SELECT count(id_user) as jumlahUser FROM register";
-            $result=mysqli_query($con,$sql);
-            $row=mysqli_fetch_assoc($result); //data diambil trus jadi bentuk array
-            $jumlah=$row['jumlahUser'];
+    include('../koneksi.php');
+    $sql="SELECT count(id_user) as jumlahUser FROM register";
+    $result=mysqli_query($con,$sql);
+    $row=mysqli_fetch_assoc($result); //data diambil trus jadi bentuk array
+    $jumlah=$row['jumlahUser'];
             
-        ?>
+?>
 
 <?php
             include('../koneksi.php');
@@ -209,15 +211,7 @@ session_start();
                       echo '<td>'.$data['SerPac'].'</td>';
                       echo '<td>'.$data['bookDate'].'</td>';
                       echo '<td>'.$data['arrival'].'</td>';
-                      
-                    //   echo '<td>'.$data['status'].'</td>';
-                      
-                    //   echo '<td><a href="edit.php?id='.$data['ID_Reserve'].'">
-                    //   Edit</a> /
-
-                    //   <a href="hapus.php?id='.$data['ID_Reserve'].'"
-                    //   onclick="return confirm(\'Yakin?\')">Hapus</a></td>';
-                    echo '</tr>';
+                      echo '</tr>';
 
                     $no++;
                 }
@@ -265,23 +259,11 @@ session_start();
      
     </table>
   </div>
-
-  <!-- <div id="content" style="display:none">
-       <p>Nama : Ecen</p>
-       <p>Nama : Ecen</p>
-       <p>Nama : Ecen</p>
-       <p>Nama : Ecen</p>
-       <p>Nama : Ecen</p>
-       <p>Nama : Ecen</p>
-   </div> -->
    <hr>
 
 <button  id="cmd" class="submit" type="submit">Download</button>
 
-  
-
-  
-  <br>
+<br>
   
 
   <!-- Footer -->

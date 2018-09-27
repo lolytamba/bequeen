@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Login Admin</title>
   
 
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
@@ -15,8 +15,7 @@
 
 <body>
 
-  
-<div class="cont">
+<div class="cont" style="margin-top: 150px">
 <form action="login-proses.php" method="post" id="signin" name ="signin" onsubmit="return cekform2()">
     <div class="form sign-in" style="padding-top: 100px">
       <h2>Welcome back, Admin</h2>
@@ -35,16 +34,10 @@
   <div class="sub-cont">
     <div class="img">
     </div>
-    
   </div>
 </div>
   
 
-    <script  src="js/index.js"></script>
-
-
-
-
+<script  src="js/index.js"></script>
 </body>
-
 </html>

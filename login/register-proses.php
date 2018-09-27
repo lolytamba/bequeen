@@ -16,13 +16,12 @@ if(isset($_POST['register']))
 	$email			= $_POST['email'];
 	$password 		= $_POST['password'];
 	$password_hash  = password_hash($password, PASSWORD_DEFAULT);
-	$active 		= bin2hex(random_bytes(5)); //anggap ini hash semacam password random
+	$active 		= bin2hex(random_bytes(5)); 
 
 	$user_check = mysqli_query($con, "SELECT id_user FROM register WHERE email = '$email'") or die(mysqli_connect_error());
 
 	if(mysqli_num_rows($user_check)>0){
 		echo 'Maaf Email anda telah digunakan!';
-		//header('location: login.php');
 	}else{
 		$input = mysqli_query($con,"INSERT INTO register VALUES(NULL,'$nama', '$no_hp', '$email', '$password_hash', '$active', 0)") or die(mysqli_connect_error());
 		if($input)

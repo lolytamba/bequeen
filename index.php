@@ -14,24 +14,23 @@
 <?php 
 session_start();
 if($_SESSION['id']){
-  $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
-  $email = $_SESSION["email"]; //email itu variabelnya buat nampung session email, trus dipake disini buat ambil datanya
+  $id = $_SESSION['id']; 
+  $email = $_SESSION["email"];
   $nama = $_SESSION["nama"];
   $phone =$_SESSION['phone'];
-  
 ?>
  <!-- Navbar (sit on top) -->
  <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="../profile/profile.php" class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?> </a> 
+    <a href="../profile/profile.php" class="w3-bar-item w3-button w3-wide">Hi, <?php echo $nama;?>!</a> 
   
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="index.php" class="w3-bar-item w3-button">HOME</a>
-      <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="../login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
+      <a href="login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -52,7 +51,7 @@ if($_SESSION['id']){
   <!-- Right-sided navbar links -->
   <div class="w3-right w3-hide-small">
     <a href="index.php" class="w3-bar-item w3-button">HOME</a>
-    <a href="#service" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+    <a href="Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
     <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
     <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
@@ -66,6 +65,7 @@ if($_SESSION['id']){
 </div>
 <?php }
 ?>
+
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
@@ -80,7 +80,7 @@ if($_SESSION['id']){
 <header class="bgimg-1 w3-display-container" id="home"></header>
 
 <!-- Welcome Section -->
-<div class="w3-container" id="home-tengah" style = "padding-top: 100px">
+<div class="w3-container" id="home-tengah">
   <div class="w3-row-padding" >
     <table>
       <td><img src="images/welcome.jpg" alt=""></td>
@@ -94,27 +94,27 @@ if($_SESSION['id']){
 </div>
 
 <!-- Services Section - "Services" -->
-<div class="w3-container w3-light-grey" id="service" style = "padding-top: 60px">
-    <div class="w3-row-padding">
-    <div class="w3-col m6 ourServiceText" >
+<div class="w3-container w3-light-grey" id="service" style = "padding-top: 10px">
+    <div class="w3-row-padding w3-light-blue">
+    <div class="w3-col m6 ourServiceText " >
       <h3>Our Services</h3>
       <p>1. Hair Styling<br>2. Nail Art<br>3. Make Up Studio</p>
       <p><a href="#services" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Services</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="images/services.jpg" width="800" height="394">
+      <img class="w3-image w3-round-large" src="images/services.jpg" width="800" height="394" style="padding-top: 20px; padding-bottom: 20px">
     </div>
 </div>  
 
 <!-- Our Services Section -->
-<div class="w3-container" style="padding:128px 16px" id="services">
+<div class="w3-container" id="services">
   <h3 class="w3-center">Our Services</h3>
   <p class="w3-center w3-large">What we've done for our customers</p>
   <div class="w3-row-padding" style="margin-top:64px">
 
-    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 30px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 70px">
       <div class="w3-card">
-        <img src="images/hair.jpg" alt="Hair" style="width:100%; height: 235px">
+        <img src="images/hair.jpg" alt="Hair" style="width:100%; height: 230px">
         <div class="w3-container">
           <h3>Hair Styling</h3>
           <p class="w3-opacity">Bee Queen</p>
@@ -123,9 +123,9 @@ if($_SESSION['id']){
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 140px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 90px">
       <div class="w3-card">
-        <img src="images/nail art.jpg" alt="Jane" style="width:100%; height: 235px;">
+        <img src="images/nail art.jpg" alt="Jane" style="width:100%; height: 230px;">
         <div class="w3-container">
           <h3>Nail Art</h3>
           <p class="w3-opacity">Bee Queen</p>
@@ -134,9 +134,9 @@ if($_SESSION['id']){
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 120px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 90px">
       <div class="w3-card">
-        <img src="images/makeup.jpg" alt="Nail" style="width:100%; height: 235px">
+        <img src="images/makeup.jpg" alt="Nail" style="width:100%; height: 230px">
         <div class="w3-container">
           <h3>Make Up</h3>
           <p class="w3-opacity">Bee Queen</p>
@@ -225,7 +225,7 @@ if($_SESSION['id']){
   
 
 <!-- Packet Section -->
-<div class="w3-container w3-center w3-light-blue" style="padding:128px 16px" id="packet">
+<div class="w3-container w3-center" style="background-color: #E0F0FF" id="packet">
   <h3>BeQueen's Packet</h3>
   <p class="w3-large">Choose a packet that you want to book.</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -281,23 +281,14 @@ if($_SESSION['id']){
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-light-blue" style="padding-bottom: 50px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Send us a Message</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Yogyakarta, Indonesia</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +0274 67890</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>  Email: Bequeen@hair-beauty.com</p>
       <br>
-      <form action="/action_page.php" target="_blank">
-        <textarea class="w3-input w3-border" rows="5" id="message" placeholder="Message"></textarea>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
     </div>
     <div class="w3-half">
       <!-- Add Google Maps -->
@@ -309,9 +300,9 @@ if($_SESSION['id']){
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-black" style="padding-top: 50px">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a title="BeQueen" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
+  <p>Powered by <a title="BeQueen" href="../index.php" class="w3-hover-text-blue">BeQueen</a></p>
 </footer>
 
 <script src="vendor/jquery/dist/jquery.min.js"></script>

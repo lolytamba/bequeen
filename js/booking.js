@@ -1,7 +1,6 @@
 function showSelection(){
-  var jenis = $('#SP').val();
-  $('#SP').hide();
-  
+  var jenis = $('#ShowSelection').val();
+  $('#ShowSelection').css('display','none');
   if(jenis == 'Service'){
     $('#service').show();
   }else if(jenis == 'Paket'){

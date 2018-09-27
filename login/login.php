@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="vendor/boostrap/dist/css/bootstrap.min.css" /> -->
 
-  
 </head>
-
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -115,38 +113,10 @@
   </div>
 </div>
 
-  <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Send us a Message</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Yogyakarta, Indonesia</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +0274 67890</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Bequeen@hair-beauty.com</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <textarea class="w3-input w3-border" rows="5" id="message" placeholder="Message"  ></textarea>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-    </div>
-    <div class="w3-half">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-max" style="width:100%;height:510px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0994412282853!2d110.41331831525825!3d-7.779280194393621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f1fb2f2b45%3A0x20986e2fe9c79cdd!2sUniversitas+Atma+Jaya+Yogyakarta+-+Kampus+3+Gedung+Bonaventura+Babarsari!5e0!3m2!1sid!2sid!4v1536506939386" style="width:100%;height:510px;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-black" style="padding-top: 30px">
   <a href="login.php" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a title="BeQueen" href = "../index.php" target="_blank" class="w3-hover-text-green">BeQueen</a></p>
+  <p>Powered by <a title="BeQueen" href = "../index.php" target="_blank" class="w3-hover-text-blue">BeQueen</a></p>
 </footer>
 
 <script src="../jquery/dist/jquery.min.js"></script>

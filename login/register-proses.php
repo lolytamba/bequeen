@@ -19,10 +19,9 @@ if(isset($_POST['register']))
 	$active 		= bin2hex(random_bytes(5)); 
 
 	$user_check = mysqli_query($con, "SELECT id_user FROM register WHERE email = '$email'") or die(mysqli_connect_error());
-	echo "1";
 
 	if(mysqli_num_rows($user_check)>0){
-		echo 'Maaf Email anda telah digunakan!';
+		echo '<script language="javascript">alert("Email Sudah Digunakan"); document.location="login.php";</script>';
 	}else{
 		$input = mysqli_query($con,"INSERT INTO register VALUES(NULL,'$nama', '$no_hp', '$email', '$password_hash', '$active', 0,NULL)") or die(mysqli_connect_error());
 		if($input)

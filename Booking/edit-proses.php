@@ -15,8 +15,9 @@
 
         $arrival    =$_POST['arrival'];
         $bookDate   =$_POST['bookDate'];
+        $id        = $_POST['id'];
 
-        $update=mysqli_query($con,"UPDATE test_book SET SerPac='$SerPac', arrival='$arrival', bookDate='$bookDate'") or die (mysqli_connect_error());
+        $update=mysqli_query($con,"UPDATE test_book SET SerPac='$SerPac', arrival='$arrival', bookDate='$bookDate' WHERE id='$id'") or die (mysqli_connect_error());
         if($update){
             echo '<script language="javascript">alert("Booking Updated!"); document.location="read.php";</script>';
         }else{

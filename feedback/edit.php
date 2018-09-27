@@ -14,9 +14,7 @@
 session_start();
 if($_SESSION['id']){
   $id = $_SESSION['id']; 
-  $email = $_SESSION["email"];
-  $nama = $_SESSION["nama"];
-  $phone =$_SESSION['phone'];
+  $nama = $_SESSION['nama']; 
 ?>
  <!-- Navbar (sit on top) -->
  <div class="w3-top">
@@ -27,8 +25,8 @@ if($_SESSION['id']){
     <div class="w3-right w3-hide-small">
       <a href="../index.php" class="w3-bar-item w3-button">HOME</a>
       <a href="../Services.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-      <a href="#packet" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="../Booking/booking.php" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> BOOK</a>
+      <a href="../index.php#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="login/logout.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGOUT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -92,6 +90,7 @@ if($_SESSION['id']){
     <form action="edit-proses.php" method="post">
         <table cellpadding="10" cellspacing="0" style="margin-left: 250px">
             <tr>
+            <input type="hidden" name="id" value="<?php echo $id;?>">
                 <td>New feedback</td>
                 <td>:</td>
                 <td><input type="text" name="fd" size="50" value="<?php echo $data['message'];?>" required></td>

@@ -41,7 +41,7 @@
                 }
             }
             else{
-                echo 'Verify Your Email Address';
+                echo '<script language="javascript">alert("Verify Your Email Address!"); document.location="login.php";</script>';
             }        
         } 
     }

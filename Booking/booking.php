@@ -2,7 +2,8 @@
   include('../koneksi.php');
   session_start();
   if($_SESSION["email"]){
-    $id = $_SESSION['id']; // buat dapat data id, pake echo ya kalau mau nampilin
+    $id = $_SESSION['id'];
+    $nama = $_SESSION['nama']; // buat dapat data id, pake echo ya kalau mau nampilin
 ?>
 <!DOCTYPE html>
 <html>

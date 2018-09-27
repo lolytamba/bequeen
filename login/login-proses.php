@@ -40,7 +40,7 @@
                 }
             }
             else{
-                echo "<script>alert('Verify Your Email Address')";
+                alert('Verify Your Email Address');
             }        
         } 
     }

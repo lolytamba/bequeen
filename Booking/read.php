@@ -77,7 +77,7 @@ if($_SESSION['id']){
     <table cellpadding="5" cellspacing="0" border="2">
         <tr class = "w3-light-blue">
             <th width="5%">No.</th>
-            <th>ID Pemesan</th>
+            <th>Account ID</th>
             <th width="10%">Service/Paket</th>
             <th width="25%">Type of Service(Hair/Nail/Makeup)</th>
             <th width="25%">Service</th>
@@ -88,7 +88,7 @@ if($_SESSION['id']){
 
         <?php 
             include('../koneksi.php');
-            $query= mysqli_query($con,"SELECT * FROM test_book ORDER BY user DESC") or die(mysqli_connect_error());
+            $query= mysqli_query($con,"SELECT * FROM test_book WHERE id='$id'") or die(mysqli_connect_error());
             if(mysqli_num_rows($query)==0)
             {
                 echo '<tr><td colspan="8">Tidak ada Data! <a href="booking.php" class="w3-button w3-black" style="margin-left: 20px">

@@ -6,6 +6,7 @@
     $nama   = $_SESSION['nama'];
     $email  = $_SESSION['email'];
     $phone  = $_SESSION['phone'];
+    $foto = $_SESSION['foto'];
   }
 ?>
 <!DOCTYPE html>
@@ -57,7 +58,7 @@
 <header class="bgimg-1 w3-display-container" id="home"></header>
 
 <!-- Edit Section -->
-<div class="w3-container" style="padding:128px 16px;background-color:#00BFFF" id="about">
+<div class="w3-container w3-light-blue" style="padding:128px 16px;background-color:#00BFFF" id="about">
   <div class="container">
       <div class="row">
       <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
@@ -71,7 +72,7 @@
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3 col-lg-3 " style="text-align: center"> <img src="qw.jpg" height="125" width="125"> </div>
+                <div class="col-md-3 col-lg-3 " style="text-align: center"> <img  src="terupload/<?php echo $foto;?>" style="float:right;" height="125" width="125"></div>
                 
                 <form action = "update.php" method="post" id="update" name="update" onsubmit="return cekform()">
                   <td><input id="id" type="hidden" name="id" value="<?php echo $id;?>" required></td>

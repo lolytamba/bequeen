@@ -72,7 +72,7 @@ if($_SESSION['id']){
 <body>
 <!-- Packet Section -->
 <div class="w3-container w3-center w3-light" style="padding-bottom: 80px" id="packet">
-  <h3>My Booking</h3>
+  <h3>MY BOOKING</h3>
   <div class="w3-container w3-center w3-light" style="margin-left: 10px">
     <table cellpadding="5" cellspacing="0" border="2">
         <tr class = "w3-light-blue">

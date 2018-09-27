@@ -16,7 +16,7 @@ if($_SESSION['id']){
   $SP = $_SESSION["SP"];
   $Ser = $_SESSION["Ser"];
   $SerPac =$_SESSION['SerPac'];
-  // $arrival =$_SESSION['arrival'];
+  $nama =$_SESSION['nama'];
   // $bookDate =$_SESSION['bookDate'];
 
 ?>

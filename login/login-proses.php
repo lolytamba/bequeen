@@ -40,7 +40,7 @@
                 }
             }
             else{
-                alert('Verify Your Email Address');
+                echo 'Verify Your Email Address';
             }        
         } 
     }
